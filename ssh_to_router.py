@@ -3,12 +3,11 @@ from netmiko import ConnectHandler
 #Device object where you want to connect
 
 device_id ={
-    'device_type' : 'cisco_ios', #check CLASS_MAPPER in https://github.com/ktbyers/netmiko/blob/master/netmiko/ssh_dispatcher.py
-    'host':'192.168.0.1',
+    'device_type': 'cisco_ios', #check CLASS_MAPPER in https://github.com/ktbyers/netmiko/blob/master/netmiko/ssh_dispatcher.py
+    'host': '192.168.0.1',
     'username': 'cisco',
     'password': 'cisco',
-    'port': 8022,  # optional, defaults to 22
-    'secret': 'secret',  # optional, defaults to ''
+    'port': 22,  # optional, defaults to 22
 }
 
 #Start connection to device
