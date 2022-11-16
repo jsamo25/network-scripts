@@ -16,12 +16,10 @@ tn.write(password.encode('utf8') + b"\n")
 #Enable
 tn.write(b"enable\n")  # \n represents end of line
 tn.write(b"cisco\n")
-tn.write(b"term len 0\n")
 tn.write(b"show ver | i IOS \n")
-tn.write(b"conf t\n")
+tn.write(b"configure terminal\n")
 tn.write(b"interface loopback 100\n")
 tn.write(b"ip address 1.1.1.1 255.255.255.255\n")
-
 tn.write(b"end\n")
 tn.write(b"exit\n")  # to close the connection
 
